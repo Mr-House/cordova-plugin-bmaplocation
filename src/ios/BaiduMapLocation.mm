@@ -21,6 +21,10 @@
     _localManager.delegate = self;
 }
 
+- (void)BMKLocationManager:(BMKLocationManager *)manager doRequestAlwaysAuthorization:(CLLocationManager *)locationManager {
+    [locationManager requestWhenInUseAuthorization];
+}
+
 - (void)getCurrentPosition:(CDVInvokedUrlCommand*)command
 {
     _execCommand = command;
