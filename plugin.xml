@@ -20,7 +20,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="@hi-itech/cordova-plugin-baidumaplocation"
+        id="@hi-itech/cordova-plugin-bmaplocation"
         version="1.0.0">
     <name>BadiduMap Location</name>
     <description>Cordova Geolocation Plugin,use Baidu Map SDK</description>
