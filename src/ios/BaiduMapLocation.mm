@@ -22,7 +22,7 @@
 }
 
 - (void)BMKLocationManager:(BMKLocationManager *)manager doRequestAlwaysAuthorization:(CLLocationManager *)locationManager {
-    [locationManager requestWhenInUseAuthorization];
+    [locationManager requestAlwaysAuthorization];
 }
 
 - (void)getCurrentPosition:(CDVInvokedUrlCommand*)command

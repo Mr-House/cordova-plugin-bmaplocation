@@ -1,11 +1,11 @@
 var exec = require('cordova/exec');
 
-var baidumap_location = {
+var bmaplocation = {
     getCurrentPosition: function (successCallback, errorCallback, options) {
 
         // Timer var that will fire an error callback if no position is retrieved from native
         // before the "timeout" param provided expires
-        var timeoutTimer = {timer: null};
+        var timeoutTimer = { timer: null };
 
         var win = function (p) {
             clearTimeout(timeoutTimer.timer);
@@ -53,4 +53,4 @@ function createTimeout(errorCallback, timeout) {
     return t;
 }
 
-module.exports = baidumap_location
+module.exports = bmaplocation

@@ -1,6 +1,6 @@
 {
   "name": "@hi-itech/cordova-plugin-bmaplocation",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Cordova Geolocation Plugin,use Baidu Map SDK",
   "cordova": {
     "id": "@hi-itech/cordova-plugin-bmaplocation",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aruis/cordova-plugin-baidumaplocation.git"
+    "url": "git+https://github.com/Mr-House/cordova-plugin-bmaplocation.git"
   },
   "keywords": [
     "cordova",
@@ -35,7 +35,7 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/aruis/cordova-plugin-baidumaplocation/issues"
+    "url": "https://github.com/Mr-House/cordova-plugin-bmaplocation/issues"
   },
-  "homepage": "https://github.com/aruis/cordova-plugin-baidumaplocation#readme"
+  "homepage": "https://github.com/Mr-House/cordova-plugin-bmaplocation#readme"
 }

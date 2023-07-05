@@ -1,12 +1,7 @@
-# 百度地图定位Cordova插件，支持Android，IOS，ionic 1x 2x 均可使用
+# 百度地图定位Cordova插件，支持Android，IOS 均可使用
 
 ### UPDATE:
-* v4.0.3 iOS版切换为iOS定位SDK V1.4版, 解决xcode10无法构建的问题, 但之后不支持返回title和subtitle
-* v4.0.2 修复Android Studio项目或新版本Cordova找不到so文件的问题
-* v4.0.1 优化了ionic3x的兼容性，升级对应百度定位依赖库（v7.5@Android）
-* v3.2.0 升级对应百度定位依赖库（v7.2@Android,v3.3.4@IOS）
-
-### 可以在此地址查看[ionic3_example](https://github.com/aruis/testbmap-cordova-ionic3)
+* IOS增加定位权限请求
 
 __致谢: 本插件Android开发主要参考 [cordova-qdc-baidu-location](https://github.com/liangzhenghui/cordova-qdc-baidu-location),感谢[liangzhenghui](https://github.com/liangzhenghui)；IOS开发主要参考[cordova-plugin-bdlocation](https://github.com/wilhantian/cordova-plugin-bdlocation)，感谢[wilhantian](https://github.com/wilhantian)__
 
@@ -39,7 +34,7 @@ __Android 版原作者[mrwutong](https://github.com/mrwutong)的话__
 #### 二，安装插件
 
 ```shell
-cordova plugin add cordova-plugin-baidumaplocation --variable ANDROID_KEY="<API_KEY_ANDROID>" --variable IOS_KEY="<API_KEY_IOS>"
+cordova plugin add @hi-itech/cordova-plugin-bmaplocation --variable ANDROID_KEY="<API_KEY_ANDROID>" --variable IOS_KEY="<API_KEY_IOS>"
 # 此处的API_KEY_XX来自于第一步，直接替换<API_KEY_XX>，也可以最后跟 --save 参数，将插件信息保存到config.xml中
 # 如果只需要Android端或者IOS端，可以只填写一个相应的AK，但是都不填肯定不行
 ```
@@ -48,7 +43,7 @@ cordova plugin add cordova-plugin-baidumaplocation --variable ANDROID_KEY="<API_
 
 ```javascript
 // 进行定位
-baidumap_location.getCurrentPosition(function (result) {
+bmaplocation.getCurrentPosition(function (result) {
     console.log(JSON.stringify(result, null, 4));
 }, function (error) {
 
@@ -81,8 +76,8 @@ baidumap_location.getCurrentPosition(function (result) {
 具体可参考如下截图
 
 
-![Android Screenshot](https://github.com/aruis/cordova-plugin-baidumaplocation/raw/master/android.jpg)
-![IOS Screenshot](https://github.com/aruis/cordova-plugin-baidumaplocation/raw/master/ios.PNG)
+![Android Screenshot](https://github.com/Mr-House/cordova-plugin-bmaplocation/raw/master/android.jpg)
+![IOS Screenshot](https://github.com/Mr-House/cordova-plugin-bmaplocation/raw/master/ios.PNG)
 
 
 具体字段内容请参照：
@@ -123,6 +118,5 @@ cordova plugin ls
 #### 五，删除本插件
 
 ```shell
-cordova plugin rm cordova-plugin-baidumaplocation
+cordova plugin rm @hi-itech/cordova-plugin-bmaplocation --variable ANDROID_KEY="<API_KEY_ANDROID>" --variable IOS_KEY="<API_KEY_IOS>"
 ```
-#### 至ionic3用户，如何在ionic3项目中使用非ionic维护的cordova插件，可以参考：[https://stackoverflow.com/questions/37942202/using-a-third-party-cordova-plugin-in-ionic-2-with-typescript](https://stackoverflow.com/questions/37942202/using-a-third-party-cordova-plugin-in-ionic-2-with-typescript)
