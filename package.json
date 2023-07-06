@@ -1,6 +1,6 @@
 {
   "name": "@hi-itech/cordova-plugin-bmaplocation",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Cordova Geolocation Plugin,use Baidu Map SDK",
   "cordova": {
     "id": "@hi-itech/cordova-plugin-bmaplocation",
